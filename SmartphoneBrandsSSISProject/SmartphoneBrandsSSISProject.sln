@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SmartphoneBrandsSSISProject", "SmartphoneBrandsSSISProject\SmartphoneBrandsSSISProject.dtproj", "{CFC26FAC-2999-44F1-8A57-31D54517AB2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFC26FAC-2999-44F1-8A57-31D54517AB2C}.Development|Default.ActiveCfg = Development
+		{CFC26FAC-2999-44F1-8A57-31D54517AB2C}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB849349-1917-4D59-8F84-EE60248728C5}
+	EndGlobalSection
+EndGlobal
