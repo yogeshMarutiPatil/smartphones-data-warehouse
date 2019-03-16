@@ -1,0 +1,159 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b2e5b2a9-764a-4c1f-89cc-d54a4b750ebf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Smartphone Brands DB</ID>
+  <Name>Smartphone Brands DB</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Smartphone Brands Data Source</DataSourceID>
+  <Schema>
+    <xs:schema id="Smartphone_x0020_Brands_x0020_DB" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Smartphone_x0020_Brands_x0020_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="87a1fb74-48e2-4aed-af55-653b2e413eba">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Brand" msprop:design-time-name="7e4583c0-e4a8-4902-8695-9533e4213f40" msprop:DbTableName="Dim_Brand" msprop:FriendlyName="Dim_Brand" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Brand_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="56e9721b-7cc9-42a5-9efd-2ab52416dd60" msprop:DbColumnName="Brand_ID" msprop:FriendlyName="Brand_ID" type="xs:int" />
+                  <xs:element name="Brand" msprop:design-time-name="d9d169b0-8af2-4bc8-9f4a-bb100a66fb67" msprop:DbColumnName="Brand" msprop:FriendlyName="Brand" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Type" msprop:design-time-name="a0cf8f27-66ff-45ff-9238-f70954a1c655" msprop:DbColumnName="Type" msprop:FriendlyName="Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:design-time-name="85f2db30-e3a0-49b9-9a51-e33266c50938" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4db014f0-660f-4417-843e-35cfdd3dcc32" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="0b6da0bf-685f-4769-8aad-2caf47b75b65" msprop:DbColumnName="Year" msprop:FriendlyName="Year" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarter" msprop:design-time-name="eae056c8-fb2c-4e65-8008-a3ce6fcbc84d" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Location" msprop:design-time-name="9728b2eb-061c-43d1-b26d-632f60010afa" msprop:DbTableName="Dim_Location" msprop:FriendlyName="Dim_Location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Location_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8b9b29f4-8778-4ecd-8a7b-685c51df1f9b" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" />
+                  <xs:element name="Country" msprop:design-time-name="da1c00cf-c4b3-41d5-8b94-6debbf7d6d62" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Continent" msprop:design-time-name="5922eb49-7a95-4f8b-906a-0530c29e4e77" msprop:DbColumnName="Continent" msprop:FriendlyName="Continent" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact" msprop:design-time-name="ff2a011b-dd91-40e5-9994-e53bab93fe58" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fact_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="90910415-21f5-4d28-970e-b88bbf52d7c5" msprop:DbColumnName="Fact_ID" msprop:FriendlyName="Fact_ID" type="xs:int" />
+                  <xs:element name="Date_ID" msprop:design-time-name="43c70208-5e95-4d53-9151-cbb2790a4b32" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Location_ID" msprop:design-time-name="486e49d1-36c3-4851-8e2b-e73b1a48680e" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Brand_ID" msprop:design-time-name="97b44a39-a25a-4185-a3f1-ff720b3474b2" msprop:DbColumnName="Brand_ID" msprop:FriendlyName="Brand_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="MarketShare" msprop:design-time-name="2643540e-1b05-4a46-9261-a1b98e1194c8" msprop:DbColumnName="MarketShare" msprop:FriendlyName="MarketShare" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Sentiment" msprop:design-time-name="76311c35-4ace-429a-9509-84df556b7d7b" msprop:DbColumnName="Sentiment" msprop:FriendlyName="Sentiment" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Global_x0020_shipment_x0020_by_x0020_Brands" msprop:design-time-name="468bccf2-940e-4b3a-8177-345fa7310b12" msprop:DbColumnName="Global shipment by Brands" msprop:FriendlyName="Global shipment by Brands" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Global_x0020_Shipment_x0020_of_x0020_All_x0020_brands" msprop:design-time-name="980e6918-225e-4eef-b247-fa7853d019d8" msprop:DbColumnName="Global Shipment of All brands" msprop:FriendlyName="Global Shipment of All brands" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Markets_x0020_Closing_x0020_Price" msprop:design-time-name="96d31dc2-2409-4ede-8376-44a772b24d3a" msprop:DbColumnName="Markets Closing Price" msprop:FriendlyName="Markets Closing Price" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Brand" />
+          <xs:field xpath="Brand_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Location" />
+          <xs:field xpath="Location_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Fact_ID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Fact-Dim_Date" msdata:parent="dbo_Dim_Date" msdata:child="dbo_Fact" msdata:parentkey="Date_ID" msdata:childkey="Date_ID" />
+          <msdata:Relationship name="Fact-Dim_Location" msdata:parent="dbo_Dim_Location" msdata:child="dbo_Fact" msdata:parentkey="Location_ID" msdata:childkey="Location_ID" />
+          <msdata:Relationship name="Fact-Dim_Brand" msdata:parent="dbo_Dim_Brand" msdata:child="dbo_Fact" msdata:parentkey="Brand_ID" msdata:childkey="Brand_ID" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Smartphone_x0020_Brands_x0020_DB xmlns="" />
+  </Schema>
+</DataSourceView>

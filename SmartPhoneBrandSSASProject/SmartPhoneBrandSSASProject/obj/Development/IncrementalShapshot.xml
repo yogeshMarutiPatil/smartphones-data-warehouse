@@ -1,0 +1,75 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SmartPhoneBrandSSASProject</Database>
+    <Server>.\YOGESH</Server>
+    <ConnectionString>Data Source=.\YOGESH;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>lDYS/isWIW1fwTKhsZFVaKNQjM8=18-11-2018 00:40:3218-11-2018 00:37:21</TimeStamp>
+        <ID>
+          <String>Smartphone Brands Data Source</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Aiq9qMU4/GXMcMct+GStnrHvCrk=26-11-2018 19:25:1526-11-2018 19:25:15</TimeStamp>
+        <ID>
+          <String>Smartphone Brands DB</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SIVILhOektyTMiuII9/bcX3q3bs=27-11-2018 01:38:1727-11-2018 01:37:33</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e5sJNXwV/cIXpgVQXK0msQ84cTE=27-11-2018 01:38:1727-11-2018 01:37:33</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>z8ZTIxbdwNwI4vk+9cSxBg53st4=27-11-2018 01:38:1727-11-2018 01:37:33</TimeStamp>
+        <ID>
+          <String>Dim Brand</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Izu+3URFFrjI2neBPS9olxaPc2Q=27-11-2018 01:38:1727-11-2018 01:37:333Epdbdg6j0AyYTzzqBWRu/6ET7o=27-11-2018 01:37:3327-11-2018 01:37:33</TimeStamp>
+        <ID>
+          <String>Smartphone Brands Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>zW+QwnXNH6zaGMGucDjsHzqHg1A=17-11-2018 15:39:2617-11-2018 15:39:26</TimeStamp>
+      <ID>
+        <String>SmartPhoneBrandSSASProject</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-11-27T01:38:19.533333Z</LastDeployed>
+</DeploymentSnapshot>
