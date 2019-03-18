@@ -21,3 +21,9 @@ This project is a part of the continuous assessment for Data warehouse and Busin
 5. R programming
 6. R Studio
 
+Steps to run the project
+1. Load 'SmartPhoneBrandSSISProject' as Integration Project in Visual Studio.
+2. Load 'SmartphoneBrandsSSASProject' as Multidimensional project in Visual Studio
+3. Load 'Scraping_Cleaning_Code.R' in R studio as R project
+4. SmartPhones.twb contains Data Visualisation sheets which demonstrates the non-trivial business queries answered on the the deployed OLAP cube.
+
