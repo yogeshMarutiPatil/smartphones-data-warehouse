@@ -714,3 +714,53 @@ if (file.exists("ShipmentShare.csv")) file.remove("ShipmentShare.csv")
 
 
 
+#############################################################################################
+#################### CLEANING OF MARKET SHARE DATA #####################
+#############################################################################################
+#This was done in order to create new files from data and covert the data from the rows to columns
+
+# df1 <- read.csv("C:\\Users\\Yogesh\\Documents\\gsmarena\\CA2018.csv")
+# df1$Country <- as.character(df1$Country)
+# 
+# year = df1$Year
+# marketShare_data_frame <- data.frame(matrix(ncol = 5, nrow= 0))
+# column_names <- c("Year", "Quarter", "Country", "Brand", "Market Share")
+# colnames(marketShare_data_frame) <- column_names
+# 
+# for (i in 4: ncol(df1)) {
+#   lengthOfDataFrame = nrow(marketShare_data_frame) 
+#   for (j in 1 : length(year)) {
+#     marketShare_data_frame[ lengthOfDataFrame + j, ] = c(df1$Year[j], df1$Quarter[j], df1$Country[j], colnames( df1 )[i] , df1[j, i])
+#   }
+# }
+# CNedit <- CN1
+# #1. #remove the col X
+# CNedit <- CNedit[ , -which(names(CNedit) %in% c("X"))]
+# #2. #add column inbetween two columns
+# CNedit <- add_column(CNedit, Quarter=1:4, .after = "Date")
+# 
+# #remove pattern from columns
+# #gsub("([0-9]+)-.*", "\\1", CN1$Date)
+# 
+# #list2 <- rep("2018",4)
+# #3. Remove pattern
+# CNedit$Date <- gsub("([0-9]+)-.*", "\\1", CNedit$Date)
+# 
+# 
+# #CN1[,1] <- NULL
+# #4.# Rename column name
+# names(CNedit)[1]<-"Year"
+# 
+# 
+# CN7 <- CNedit
+# 
+# #Merging 
+# 
+# 
+# marketShareDf = Reduce(function(x, y) merge(x, y, all=TRUE), list(CN1,CN2,CN3,CN4,CN5,CN6,CN7))
+# 
+# marketShareDf <- add_column(marketShareDf, Country="Germany", .after = "Quarter")
+# 
+# write.csv(marketShareDf, file="GermanyMarketShare.csv")
+# 
+
