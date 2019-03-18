@@ -4,6 +4,8 @@ This project is a part of the continuous assessment for Data warehouse and Busin
 
 "Smart phone Brands data warehouse & business intelligence project"
 
+![alt text](https://github.com/yogeshMarutiPatil/smartphones-data-warehouse/blob/master/smartphone.jpg)
+
 ### PROJECT DETAILS
 **Module Name**: Datawarehouse & Business Intelligence
 
