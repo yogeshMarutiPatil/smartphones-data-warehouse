@@ -36,6 +36,9 @@ library(xlsx)
 #--------------------------Youtube VideoID scrapping----------------------------------------
 #------------------------------------------------------------------------------------
 
+#Here in this block of code search keywords are being set according to the years by which the search is to be performed
+
+#Setting the working directory
 setwd("D:\\DWBI Final Data")
 data_files <- data.frame(matrix(ncol = 1, nrow = 36))
 colNames <- c("Video")
@@ -62,6 +65,7 @@ searchKeywordData <- read.csv('D:\\DWBI Final Data\\SearchKeywordData.csv', stri
 
 for (i in 1:length(searchKeywordData$Video)){
   print(i)
+  #Keywordsearch url is being updated with the keywords already defined in the previous block of code
   keywordSearchUrl <- "https://www.googleapis.com/youtube/v3/search?part=snippet%20&maxResults=50&q=Oppo%20mobile%20phones%202016%20&key=AIzaSyAS-uSQhftToHWhbVYh1u5mqjNOvTUrGJ8"
   keywordSearchUrl <- param_set(keywordSearchUrl, key = "q", value = searchKeywordData$Video[i] )
   print(keywordSearchUrl )
