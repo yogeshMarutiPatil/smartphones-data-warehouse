@@ -105,7 +105,7 @@ write.csv(video, 'VideoId.csv', row.names=FALSE)
 #------------------------------------------------------------
 #-------------------------------------------------------------
 
-
+#Here the comments extraction is being done by the used of video ids extracted earlier
 videoIdData <- read.csv('D:\\DWBI Final Data\\VideoId.csv', stringsAsFactors = F)
 str(videoIdData)
 
@@ -641,6 +641,7 @@ shipment_dataFrame$Others <- NULL
 stringSeprator <- str_split_fixed(shipment_dataFrame$Year, " ", 2)
 shipment_dataFrame <- add_column(shipment_dataFrame, Quarter=stringSeprator[1:36,1], .after = "Year")
 
+#gsub() function replaces all matches of a string
 shipment_dataFrame$Quarter <- gsub("[a-zA-Z ]", "", shipment_dataFrame$Quarter)
 
 shipment_dataFrame$Year <- gsub("Q1 '", "20", shipment_dataFrame$Year)
@@ -712,7 +713,7 @@ for (i in 3: ncol(shipmentDataFrame)) {
 shipment_data_frame <- shipment_data_frame[!grepl("Vivo", shipment_data_frame$Brand),]
 write.csv(shipment_data_frame, 'ShipmentDataByVendor.csv', row.names=FALSE)
 
-
+#This is being done inorder to avoid the commit to the same file again and again
 if (file.exists("ShipmentV.csv")) file.remove("ShipmentV.csv")
 if (file.exists("ShipmentShare.csv")) file.remove("ShipmentShare.csv")
 
