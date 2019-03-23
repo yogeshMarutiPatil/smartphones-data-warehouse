@@ -187,7 +187,7 @@ write.csv(CommentsRevDf, 'CommentsYearQtr.csv', row.names=FALSE)
 
 
 #Sentiment Analysis of Comments using afinn
-#The AFINN lexicon assigns words with a score that runs between -5 and 5, with negative scores indicating negative sentiment and positive scores indicating positive sentiment.
+
 
 CommentsQtrRev <- read.csv('D:\\DWBI Final Data\\CommentsYearQtr.csv', stringsAsFactors = F)
 
@@ -227,7 +227,6 @@ names(df)[2] <-"ShipmentInMillionUnit"
 stringSeprator <- str_split_fixed(df$Year, " ", 2)
 df <- add_column(df, Quarter=stringSeprator[1:35,1], .after = "Year")
 
-#gsub() function replaces all matches of a string,
 
 df$Quarter <- gsub("[a-zA-Z ]", "", df$Quarter)
 
@@ -274,7 +273,7 @@ sampleDf <- df2
 sampleDf <- na.omit(sampleDf)
 sampleDf$Founded <- NULL
 write.table(sampleDf, "BrandInfo.csv", sep = ",", col.names = T, append = T,row.names = F)
-
+#in order to append e have used table
 #--------------------------------------------------------------------------------
 
 brand_Info <- read_html("https://en.wikipedia.org/wiki/Apple_Inc.")
