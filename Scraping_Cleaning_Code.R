@@ -197,7 +197,7 @@ comment_text_df <- data_frame(year=CommentsQtrRev$Year,quarter=CommentsQtrRev$Qu
 comment_text_df <- comment_text_df %>% unnest_tokens(word, text)
 
 afin <- get_sentiments("afinn")
-
+#here the mean of the score is taken and a new column named sentiment is being added
 afinSent <- comment_text_df %>%
   inner_join(afin) %>%
   group_by(Brand=brand, Year= year, Quarter= quarter) %>%
